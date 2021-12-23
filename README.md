@@ -21,7 +21,11 @@ python main.py --src imgs/test6.jpg --dst imgs/test7.jpg --out results/output6_7
 
 ## Install
 ### Requirements
+### Mac 安装
 * `pip install -r requirements.txt`
+* 可能会出现  ERROR: CMake must be installed to build dlib
+* pip3 install cmake
+* 然后再 pip3 install -r requirements.txt
 * OpenCV 3: `conda install opencv` (If you have conda/anaconda)
 
 Note: See [requirements.txt](requirements.txt) for more details.
@@ -33,6 +37,10 @@ git clone https://github.com/wuhuikai/FaceSwap.git
 ```sh
 python main.py ...
 ```
+*可能出现 ModuleNotFoundError: No module named 'cv2'
+* pip3 install opencv-python
+* pip install opencv-contrib-python
+* 完了就可以跑main.py
 Note: Run **python main.py -h** for more details.
 
 
